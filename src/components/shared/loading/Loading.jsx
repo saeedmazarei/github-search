@@ -1,9 +1,8 @@
-import Card from "../card/Card"
 import loadingImage from '/assets/images/loading.svg'
 import styles from './Loading.module.scss'
 
 function Loading() {
-    return <Card className={styles['loading-container']}><img src={loadingImage} alt="Loading" /></Card>
+    return <div className={styles.loadingContainer}><img src={loadingImage} alt="Loading" /></div>
 }
 
 export default Loading
