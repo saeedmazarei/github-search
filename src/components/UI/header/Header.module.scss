@@ -5,14 +5,16 @@
     align-items: center;
     padding: 0 20px;
     height: 60px;
-    background-color: #333;
+    background-color: var(--primary-color);
     color: #fff;
 }
 
 .navBar {
     ul {
         display: flex;
+        justify-content: center;
         gap: 20px;
+        padding-left: 0;
         li {
             cursor: pointer;
             list-style: none;
@@ -20,5 +22,16 @@
                 color: #ccc;
             }
         }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        height: 80px;
+    }
+    .navBar ul {
+        margin-top: 10px;
     }
 }
