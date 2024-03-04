@@ -1,0 +1,46 @@
+.userCard {
+    width: 30%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    border-radius: 5%;
+    h3 {
+        font-size: 1.17rem;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.moreButton {
+    width: 25%;
+    border-radius: 5px;
+    background: var(--dark-color);
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    border: none;
+    cursor: pointer;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .userCard {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .userCard {
+        width: 100%;
+    }
+}

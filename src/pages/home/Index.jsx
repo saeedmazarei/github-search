@@ -14,7 +14,7 @@ function Home() {
     const handleSubmit = async () => {
         setLoading(true)
         const res = await getUser(searchRef.current.value)
-        setSearchResult(res.data)
+        setSearchResult(res.data.items)
         setLoading(false)
     }
     return (
