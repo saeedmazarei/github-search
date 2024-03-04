@@ -17,6 +17,11 @@ function Home() {
         setSearchResult(res.data.items)
         setLoading(false)
     }
+
+    const handleClear = () => {
+        setSearchResult([])
+    }
+
     return (
         <div className={styles.home}>
             <div className={styles.searchBar}>
@@ -24,7 +29,7 @@ function Home() {
                 <Button className={styles.searchButton} onClick={handleSubmit}>
                     Submit
                 </Button>
-                <Button className={styles.clearButton} onClick={handleSubmit}>
+                <Button className={styles.clearButton} onClick={handleClear}>
                     Clear
                 </Button>
             </div>
