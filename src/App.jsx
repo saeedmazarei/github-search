@@ -23,9 +23,9 @@ function App() {
     ])
 
     return (
-        <Suspense>
+        <>
             <RouterProvider router={router} />
-        </Suspense>
+        </>
     )
 }
 
