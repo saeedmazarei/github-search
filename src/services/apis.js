@@ -1,3 +1,3 @@
 import api from './config'
 
-export const getUser = (username) => api.get(`search/users/${username}`)
+export const getUser = (query) => api.get(`search/users?q=${query}`)
