@@ -1,9 +1,10 @@
 import { useRef, useState } from 'react'
 
+import { getUser } from '../../services/apis'
 import Button from '../../components/shared/button/Button'
 import Loading from '../../components/shared/loading/Loading'
+import UserList from './user-list/UserList'
 import styles from './Index.module.scss'
-import { getUser } from '../../services/apis'
 
 function Home() {
     const [searchResult, setSearchResult] = useState([])
@@ -28,6 +29,7 @@ function Home() {
                 </Button>
             </div>
             {loading && <Loading />}
+            {!loading && <UserList searchResult={searchResult} />}
         </div>
     )
 }
