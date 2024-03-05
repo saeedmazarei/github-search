@@ -1,0 +1,24 @@
+.backButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    span {
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+}
+
+.backButton {
+    border-radius: 5px;
+    background: var(--light-color);
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem 1.3rem;
+
+    a {
+        text-decoration: none;
+        color: var(--dark-color);
+        font-size: 1rem;
+    }
+}
