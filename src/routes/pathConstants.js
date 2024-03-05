@@ -1,6 +1,6 @@
 const PathConstants = {
     HOME: "/",
-    REPODETAILS: "/details/:owner/:repo"
+    REPODETAILS: "/details/:owner"
 }
 
 export default PathConstants

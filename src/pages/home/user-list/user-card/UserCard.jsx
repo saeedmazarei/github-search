@@ -12,7 +12,7 @@ function UserCard({ user }) {
             <Image src={user.avatar_url} alt={user.login} />
             <h3>{user.login}</h3>
             <Button className={styles.moreButton}>
-                <Link to={user.html_url}>More</Link>
+                <Link to={`/details/${user.login}`}>More</Link>
             </Button>
         </Card>
     )
