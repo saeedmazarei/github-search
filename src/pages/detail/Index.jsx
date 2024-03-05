@@ -7,6 +7,7 @@ import Loading from '../../components/shared/loading/Loading'
 import BackButton from './back-button/BackButton'
 import styles from './Index.module.scss'
 import ProfileAndBio from './profile-bio/ProfileAndBio'
+import FollowerFolowing from './follower-following/FollowerFolowing'
 
 function Detail() {
     const [userDetailData, setUserDetailData] = useState({})
@@ -29,6 +30,7 @@ function Detail() {
             {!loading &&<div className={styles.detail}>
                 <BackButton hireable={userDetailData.hireable} />
                 <ProfileAndBio DetailData={userDetailData} />
+                <FollowerFolowing userDetails={userDetailData} />
             </div>}
         </>
     )

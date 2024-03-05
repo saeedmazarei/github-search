@@ -1,0 +1,19 @@
+.followerFollowingContainer {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 1rem;
+    margin: 0.7rem 0;
+}
+
+.followerFollowing {
+    font-size: .8rem;
+    padding: 0.4rem 0.7rem;
+    text-align: center;
+    margin: 0.3rem;
+    border-radius: 5px;
+    color: #fff;
+}
