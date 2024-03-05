@@ -29,9 +29,9 @@ function Home() {
                 <Button className={styles.searchButton} onClick={handleSubmit}>
                     Submit
                 </Button>
-                <Button className={styles.clearButton} onClick={handleClear}>
+                {searchResult.length > 0 && <Button className={styles.clearButton} onClick={handleClear}>
                     Clear
-                </Button>
+                </Button>}
             </div>
             {loading && <Loading />}
             {!loading && <UserList searchResult={searchResult} />}
