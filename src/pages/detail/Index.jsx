@@ -6,6 +6,7 @@ import { getUserDetail } from '../../services/apis'
 import Loading from '../../components/shared/loading/Loading'
 import BackButton from './back-button/BackButton'
 import styles from './Index.module.scss'
+import ProfileAndBio from './profile-bio/ProfileAndBio'
 
 function Detail() {
     const [userDetailData, setUserDetailData] = useState({})
@@ -25,9 +26,10 @@ function Detail() {
     return (
         <>
             {loading && <Loading />}
-            <div className={styles.detail}>
+            {!loading &&<div className={styles.detail}>
                 <BackButton hireable={userDetailData.hireable} />
-            </div>
+                <ProfileAndBio DetailData={userDetailData} />
+            </div>}
         </>
     )
 }
