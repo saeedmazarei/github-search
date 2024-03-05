@@ -1,9 +1,40 @@
-# React + Vite
+# GitHub User Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React application that allows users to search for GitHub users and view detailed information about them along with a list of their repositories.
 
-Currently, two official plugins are available:
+## Technologies Used
+- React
+- Axios
+- Sass
+- Vite
+- React Router Dom
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# github-search
+## Features
+- Search for GitHub users by username
+- View detailed information about a user
+- View a list of repositories belonging to the user
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/saeedmazarei/github-search.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and visit `http://localhost:5173` to use the application.
+
+## How to Use
+1. Enter a GitHub username in the search bar and click the search button.
+2. Click on a user to view detailed information and a list of their repositories.
+
+
+Happy coding! 🚀
